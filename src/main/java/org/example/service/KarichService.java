@@ -1,11 +1,13 @@
 package org.example.service;
 
 import org.example.config.KarichStarterProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDate;
 
 public class KarichService {
     private final KarichStarterProperties properties;
+    @Autowired
 
     public KarichService(KarichStarterProperties properties) {
         this.properties = properties;
